@@ -1,0 +1,17 @@
+//
+//  E_CycleApp.swift
+//  E-Cycle
+//
+//  Created by Ashok Saravanan on 1/22/23.
+//
+
+import SwiftUI
+
+@main
+struct E_CycleApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
