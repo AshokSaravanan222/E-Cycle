@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct E_CycleApp: App {
+    
+    @StateObject var sheetManager = SheetManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreenView()
+//            ContentView()
+//                .environmentObject(sheetManager)
+            //PopupView()
         }
     }
 }

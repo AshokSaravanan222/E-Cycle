@@ -1,26 +1,32 @@
-//
-//  ContentView.swift
-//  E-Cycle
-//
-//  Created by Ashok Saravanan on 1/22/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var camera = ViewController()
+    @EnvironmentObject var sheetManager: SheetManager
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        HostedViewController(view: camera)
+        SubViews(camera: camera)
+//        ZStack {
+//
+//            Color
+//                .mint
+//                .ignoresSafeArea()
+//            Button("Show Custom Sheet") {
+//                withAnimation(.spring()) {
+//                    sheetManager.present(with: .init(item: items[20]))
+//                }
+//            }
+//        }
+//        .popup(with: sheetManager)
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(SheetManager())
     }
 }

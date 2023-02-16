@@ -7,19 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B90EBC02986FA620068B157 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBBF2986FA620068B157 /* Item.swift */; };
+		6B90EBC22986FBDA0068B157 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBC12986FBDA0068B157 /* ModelData.swift */; };
+		6B90EBCA298707C70068B157 /* itemData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B90EBC9298707C70068B157 /* itemData.json */; };
+		6B90EBCE2989E9280068B157 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBCD2989E9280068B157 /* Detector.swift */; };
+		6B90EBD12989E97F0068B157 /* YOLOv3TinyInt8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBD02989E97F0068B157 /* YOLOv3TinyInt8LUT.mlmodel */; };
+		6B90EBD32989EEFF0068B157 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBD22989EEFF0068B157 /* CameraView.swift */; };
+		6B90EBDC298F4A750068B157 /* SwiftUICam in Frameworks */ = {isa = PBXBuildFile; productRef = 6B90EBDB298F4A750068B157 /* SwiftUICam */; };
+		6B90EBE0299D8A590068B157 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBDF299D8A590068B157 /* CameraModel.swift */; };
+		6B90EBE2299EAA930068B157 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBE1299EAA930068B157 /* Classifier.swift */; };
+		6B90EBE4299EABA30068B157 /* SubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBE3299EABA30068B157 /* SubViews.swift */; };
 		6B95FACE297D80DE00C68584 /* E_CycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B95FACD297D80DE00C68584 /* E_CycleApp.swift */; };
 		6B95FAD0297D80DE00C68584 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B95FACF297D80DE00C68584 /* ContentView.swift */; };
 		6B95FAD2297D80DE00C68584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B95FAD1297D80DE00C68584 /* Assets.xcassets */; };
 		6B95FAD6297D80DE00C68584 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B95FAD5297D80DE00C68584 /* Preview Assets.xcassets */; };
+		6B95FAE1297E030E00C68584 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B95FAE0297E030E00C68584 /* ViewController.swift */; };
+		6B95FAE4297E057C00C68584 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B95FAE3297E057C00C68584 /* SplashScreenView.swift */; };
+		6B95FAEB297E12B000C68584 /* norwester.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B95FAEA297E12B000C68584 /* norwester.otf */; };
+		6BA2BC4E298373CA00F4F824 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA2BC4D298373CA00F4F824 /* PopupView.swift */; };
+		6BA2BC522985BE7900F4F824 /* SheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA2BC512985BE7900F4F824 /* SheetManager.swift */; };
+		6BA2BC542985C55F00F4F824 /* PopupViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA2BC532985C55F00F4F824 /* PopupViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B90EBBF2986FA620068B157 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6B90EBC12986FBDA0068B157 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		6B90EBC9298707C70068B157 /* itemData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = itemData.json; sourceTree = "<group>"; };
+		6B90EBCD2989E9280068B157 /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
+		6B90EBD02989E97F0068B157 /* YOLOv3TinyInt8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3TinyInt8LUT.mlmodel; sourceTree = "<group>"; };
+		6B90EBD22989EEFF0068B157 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		6B90EBDF299D8A590068B157 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		6B90EBE1299EAA930068B157 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		6B90EBE3299EABA30068B157 /* SubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViews.swift; sourceTree = "<group>"; };
 		6B95FACA297D80DE00C68584 /* E-Cycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Cycle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B95FACD297D80DE00C68584 /* E_CycleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_CycleApp.swift; sourceTree = "<group>"; };
 		6B95FACF297D80DE00C68584 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B95FAD1297D80DE00C68584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B95FAD3297D80DE00C68584 /* E_Cycle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = E_Cycle.entitlements; sourceTree = "<group>"; };
 		6B95FAD5297D80DE00C68584 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B95FAE0297E030E00C68584 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B95FAE2297E04C200C68584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6B95FAE3297E057C00C68584 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		6B95FAEA297E12B000C68584 /* norwester.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = norwester.otf; sourceTree = "<group>"; };
+		6BA2BC4D298373CA00F4F824 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		6BA2BC512985BE7900F4F824 /* SheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetManager.swift; sourceTree = "<group>"; };
+		6BA2BC532985C55F00F4F824 /* PopupViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,15 +59,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B90EBDC298F4A750068B157 /* SwiftUICam in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B90EBC32986FD450068B157 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B90EBBF2986FA620068B157 /* Item.swift */,
+				6B90EBC12986FBDA0068B157 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B90EBC4298705900068B157 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B90EBC9298707C70068B157 /* itemData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B90EBCF2989E9590068B157 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				6B90EBCD2989E9280068B157 /* Detector.swift */,
+				6B90EBE3299EABA30068B157 /* SubViews.swift */,
+				6B90EBE1299EAA930068B157 /* Classifier.swift */,
+				6B95FAE0297E030E00C68584 /* ViewController.swift */,
+				6B90EBD02989E97F0068B157 /* YOLOv3TinyInt8LUT.mlmodel */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		6B95FAC1297D80DE00C68584 = {
 			isa = PBXGroup;
 			children = (
+				6B95FAEA297E12B000C68584 /* norwester.otf */,
 				6B95FACC297D80DE00C68584 /* E-Cycle */,
 				6B95FACB297D80DE00C68584 /* Products */,
 			);
@@ -52,8 +115,18 @@
 		6B95FACC297D80DE00C68584 /* E-Cycle */ = {
 			isa = PBXGroup;
 			children = (
+				6B95FAE2297E04C200C68584 /* Info.plist */,
 				6B95FACD297D80DE00C68584 /* E_CycleApp.swift */,
+				6B90EBC32986FD450068B157 /* Model */,
+				6B90EBC4298705900068B157 /* Resources */,
+				6B95FAE3297E057C00C68584 /* SplashScreenView.swift */,
+				6BA2BC4D298373CA00F4F824 /* PopupView.swift */,
 				6B95FACF297D80DE00C68584 /* ContentView.swift */,
+				6B90EBD22989EEFF0068B157 /* CameraView.swift */,
+				6B90EBDF299D8A590068B157 /* CameraModel.swift */,
+				6BA2BC532985C55F00F4F824 /* PopupViewModifier.swift */,
+				6BA2BC512985BE7900F4F824 /* SheetManager.swift */,
+				6B90EBCF2989E9590068B157 /* Camera */,
 				6B95FAD1297D80DE00C68584 /* Assets.xcassets */,
 				6B95FAD3297D80DE00C68584 /* E_Cycle.entitlements */,
 				6B95FAD4297D80DE00C68584 /* Preview Content */,
@@ -85,6 +158,9 @@
 			dependencies = (
 			);
 			name = "E-Cycle";
+			packageProductDependencies = (
+				6B90EBDB298F4A750068B157 /* SwiftUICam */,
+			);
 			productName = "E-Cycle";
 			productReference = 6B95FACA297D80DE00C68584 /* E-Cycle.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +189,9 @@
 				Base,
 			);
 			mainGroup = 6B95FAC1297D80DE00C68584;
+			packageReferences = (
+				6B90EBDA298F4A750068B157 /* XCRemoteSwiftPackageReference "SwiftUICam" */,
+			);
 			productRefGroup = 6B95FACB297D80DE00C68584 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +208,8 @@
 			files = (
 				6B95FAD6297D80DE00C68584 /* Preview Assets.xcassets in Resources */,
 				6B95FAD2297D80DE00C68584 /* Assets.xcassets in Resources */,
+				6B90EBCA298707C70068B157 /* itemData.json in Resources */,
+				6B95FAEB297E12B000C68584 /* norwester.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +220,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B90EBE2299EAA930068B157 /* Classifier.swift in Sources */,
+				6B90EBE0299D8A590068B157 /* CameraModel.swift in Sources */,
+				6B90EBC02986FA620068B157 /* Item.swift in Sources */,
+				6BA2BC542985C55F00F4F824 /* PopupViewModifier.swift in Sources */,
+				6B95FAE1297E030E00C68584 /* ViewController.swift in Sources */,
+				6B90EBD32989EEFF0068B157 /* CameraView.swift in Sources */,
+				6BA2BC522985BE7900F4F824 /* SheetManager.swift in Sources */,
+				6B90EBE4299EABA30068B157 /* SubViews.swift in Sources */,
 				6B95FAD0297D80DE00C68584 /* ContentView.swift in Sources */,
+				6B90EBCE2989E9280068B157 /* Detector.swift in Sources */,
 				6B95FACE297D80DE00C68584 /* E_CycleApp.swift in Sources */,
+				6B90EBD12989E97F0068B157 /* YOLOv3TinyInt8LUT.mlmodel in Sources */,
+				6B90EBC22986FBDA0068B157 /* ModelData.swift in Sources */,
+				6BA2BC4E298373CA00F4F824 /* PopupView.swift in Sources */,
+				6B95FAE4297E057C00C68584 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +359,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"E-Cycle/Preview Content\"";
+				DEVELOPMENT_TEAM = FVNB837X84;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "E-Cycle/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App uses camera to detect objects.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -277,7 +374,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -301,8 +398,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"E-Cycle/Preview Content\"";
+				DEVELOPMENT_TEAM = FVNB837X84;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "E-Cycle/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App uses camera to detect objects.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -313,7 +413,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -350,6 +450,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B90EBDA298F4A750068B157 /* XCRemoteSwiftPackageReference "SwiftUICam" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pierreveron/SwiftUICam";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B90EBDB298F4A750068B157 /* SwiftUICam */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B90EBDA298F4A750068B157 /* XCRemoteSwiftPackageReference "SwiftUICam" */;
+			productName = SwiftUICam;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6B95FAC2297D80DE00C68584 /* Project object */;
 }
