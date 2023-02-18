@@ -14,6 +14,8 @@ class ViewController: UIViewController,ObservableObject, AVCaptureVideoDataOutpu
     private var videoOutput = AVCaptureVideoDataOutput()
     var requests = [VNRequest]()
     var detectionLayer: CALayer! = nil
+    var lastBounds = CGRect()
+    var framesWithoutDetection = 0
 
     // Camera
     var cameraOutput = AVCapturePhotoOutput()
@@ -92,10 +94,11 @@ class ViewController: UIViewController,ObservableObject, AVCaptureVideoDataOutpu
     }
 
     func takePic() {
-        DispatchQueue.global(qos: .background).async {
+        sessionQueue.async {
             self.cameraOutput.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
             DispatchQueue.main.async {
-                withAnimation{self.isTaken.toggle()
+                withAnimation{
+                    self.isTaken.toggle()
                 }
                 self.loading.toggle()
             }
@@ -103,7 +106,7 @@ class ViewController: UIViewController,ObservableObject, AVCaptureVideoDataOutpu
     }
     
     func reTake() {
-        DispatchQueue.global(qos: .background).async {
+        sessionQueue.async {
             self.captureSession.startRunning()
             DispatchQueue.main.async {
                 withAnimation{self.isTaken.toggle()}
@@ -118,11 +121,16 @@ class ViewController: UIViewController,ObservableObject, AVCaptureVideoDataOutpu
         }
         self.captureSession.stopRunning()
         
-        print("pic taken")
+        sessionQueue.async {
+            self.captureSession.stopRunning()
+        }
         
+        print("pic taken")
         guard let imageData = photo.fileDataRepresentation() else{return}
         self.picData = imageData
        
+        //TODO: check the detection box contianer and if it exists( use optional object) crop it on image. pass this image to classify method
+        
         self.classification = self.classify() // TODO: add method to classify
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             self.loading.toggle()
@@ -162,6 +170,7 @@ class ViewController: UIViewController,ObservableObject, AVCaptureVideoDataOutpu
         // Updates to UI must be on main queue
         DispatchQueue.main.async { [weak self] in
             self!.view.layer.addSublayer(self!.previewLayer)
+            self!.view.layer.addSublayer(self!.detectionLayer)
         }
     }
 
