@@ -15,9 +15,6 @@ struct E_CycleApp: App {
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
-//            ContentView()
-//                .environmentObject(sheetManager)
-            //PopupView()
         }
     }
 }

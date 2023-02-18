@@ -12,11 +12,9 @@
 		6B90EBCA298707C70068B157 /* itemData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B90EBC9298707C70068B157 /* itemData.json */; };
 		6B90EBCE2989E9280068B157 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBCD2989E9280068B157 /* Detector.swift */; };
 		6B90EBD12989E97F0068B157 /* YOLOv3TinyInt8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBD02989E97F0068B157 /* YOLOv3TinyInt8LUT.mlmodel */; };
-		6B90EBD32989EEFF0068B157 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBD22989EEFF0068B157 /* CameraView.swift */; };
 		6B90EBDC298F4A750068B157 /* SwiftUICam in Frameworks */ = {isa = PBXBuildFile; productRef = 6B90EBDB298F4A750068B157 /* SwiftUICam */; };
-		6B90EBE0299D8A590068B157 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBDF299D8A590068B157 /* CameraModel.swift */; };
 		6B90EBE2299EAA930068B157 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBE1299EAA930068B157 /* Classifier.swift */; };
-		6B90EBE4299EABA30068B157 /* SubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBE3299EABA30068B157 /* SubViews.swift */; };
+		6B90EBE4299EABA30068B157 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90EBE3299EABA30068B157 /* CameraView.swift */; };
 		6B95FACE297D80DE00C68584 /* E_CycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B95FACD297D80DE00C68584 /* E_CycleApp.swift */; };
 		6B95FAD0297D80DE00C68584 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B95FACF297D80DE00C68584 /* ContentView.swift */; };
 		6B95FAD2297D80DE00C68584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B95FAD1297D80DE00C68584 /* Assets.xcassets */; };
@@ -35,10 +33,8 @@
 		6B90EBC9298707C70068B157 /* itemData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = itemData.json; sourceTree = "<group>"; };
 		6B90EBCD2989E9280068B157 /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
 		6B90EBD02989E97F0068B157 /* YOLOv3TinyInt8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3TinyInt8LUT.mlmodel; sourceTree = "<group>"; };
-		6B90EBD22989EEFF0068B157 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		6B90EBDF299D8A590068B157 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 		6B90EBE1299EAA930068B157 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
-		6B90EBE3299EABA30068B157 /* SubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViews.swift; sourceTree = "<group>"; };
+		6B90EBE3299EABA30068B157 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		6B95FACA297D80DE00C68584 /* E-Cycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Cycle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B95FACD297D80DE00C68584 /* E_CycleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_CycleApp.swift; sourceTree = "<group>"; };
 		6B95FACF297D80DE00C68584 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,13 +82,57 @@
 		6B90EBCF2989E9590068B157 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				6B90EBCD2989E9280068B157 /* Detector.swift */,
-				6B90EBE3299EABA30068B157 /* SubViews.swift */,
-				6B90EBE1299EAA930068B157 /* Classifier.swift */,
 				6B95FAE0297E030E00C68584 /* ViewController.swift */,
-				6B90EBD02989E97F0068B157 /* YOLOv3TinyInt8LUT.mlmodel */,
+				6B90EBE5299FB74E0068B157 /* Detection */,
+				6B90EBE6299FB7660068B157 /* Classification */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		6B90EBE5299FB74E0068B157 /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				6B90EBCD2989E9280068B157 /* Detector.swift */,
+				6B90EBD02989E97F0068B157 /* YOLOv3TinyInt8LUT.mlmodel */,
+			);
+			path = Detection;
+			sourceTree = "<group>";
+		};
+		6B90EBE6299FB7660068B157 /* Classification */ = {
+			isa = PBXGroup;
+			children = (
+				6B90EBE1299EAA930068B157 /* Classifier.swift */,
+			);
+			path = Classification;
+			sourceTree = "<group>";
+		};
+		6B90EBE7299FB7BE0068B157 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				6BA2BC4D298373CA00F4F824 /* PopupView.swift */,
+				6BA2BC512985BE7900F4F824 /* SheetManager.swift */,
+				6BA2BC532985C55F00F4F824 /* PopupViewModifier.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		6B90EBE8299FB8100068B157 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				6B90EBC32986FD450068B157 /* Model */,
+				6B90EBC4298705900068B157 /* Resources */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		6B90EBE929A12ED00068B157 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B95FAE3297E057C00C68584 /* SplashScreenView.swift */,
+				6B90EBE3299EABA30068B157 /* CameraView.swift */,
+				6B95FACF297D80DE00C68584 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		6B95FAC1297D80DE00C68584 = {
@@ -117,15 +157,9 @@
 			children = (
 				6B95FAE2297E04C200C68584 /* Info.plist */,
 				6B95FACD297D80DE00C68584 /* E_CycleApp.swift */,
-				6B90EBC32986FD450068B157 /* Model */,
-				6B90EBC4298705900068B157 /* Resources */,
-				6B95FAE3297E057C00C68584 /* SplashScreenView.swift */,
-				6BA2BC4D298373CA00F4F824 /* PopupView.swift */,
-				6B95FACF297D80DE00C68584 /* ContentView.swift */,
-				6B90EBD22989EEFF0068B157 /* CameraView.swift */,
-				6B90EBDF299D8A590068B157 /* CameraModel.swift */,
-				6BA2BC532985C55F00F4F824 /* PopupViewModifier.swift */,
-				6BA2BC512985BE7900F4F824 /* SheetManager.swift */,
+				6B90EBE929A12ED00068B157 /* Views */,
+				6B90EBE8299FB8100068B157 /* Item */,
+				6B90EBE7299FB7BE0068B157 /* Popup */,
 				6B90EBCF2989E9590068B157 /* Camera */,
 				6B95FAD1297D80DE00C68584 /* Assets.xcassets */,
 				6B95FAD3297D80DE00C68584 /* E_Cycle.entitlements */,
@@ -221,13 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B90EBE2299EAA930068B157 /* Classifier.swift in Sources */,
-				6B90EBE0299D8A590068B157 /* CameraModel.swift in Sources */,
 				6B90EBC02986FA620068B157 /* Item.swift in Sources */,
 				6BA2BC542985C55F00F4F824 /* PopupViewModifier.swift in Sources */,
 				6B95FAE1297E030E00C68584 /* ViewController.swift in Sources */,
-				6B90EBD32989EEFF0068B157 /* CameraView.swift in Sources */,
 				6BA2BC522985BE7900F4F824 /* SheetManager.swift in Sources */,
-				6B90EBE4299EABA30068B157 /* SubViews.swift in Sources */,
+				6B90EBE4299EABA30068B157 /* CameraView.swift in Sources */,
 				6B95FAD0297D80DE00C68584 /* ContentView.swift in Sources */,
 				6B90EBCE2989E9280068B157 /* Detector.swift in Sources */,
 				6B95FACE297D80DE00C68584 /* E_CycleApp.swift in Sources */,

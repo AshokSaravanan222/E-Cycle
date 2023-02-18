@@ -1,45 +1,6 @@
-import UIKit
 import SwiftUI
 import AVFoundation
 import Vision
-
-
-//struct CameraView: View {
-//
-//    var view = HostedViewController()
-//    @State var click = false
-//    var body: some View {
-//        if (click) {
-//            ZStack {
-//                Text("test")
-//            }
-//        } else {
-//            view
-//                .ignoresSafeArea()
-//            Button (action: {
-//                click = true;
-//            }) {
-//                ZStack {
-//                    Circle()
-//                        .stroke(lineWidth: 6)
-//                        .foregroundColor(.white)
-//                        .frame(width: 85, height: 85)
-//                        .padding()
-//                }
-//            }
-//        }
-//
-//
-//    }
-//}
-//
-//
-//struct CameraView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CameraView()
-//    }
-//}
-
 
 class ViewController: UIViewController,ObservableObject, AVCaptureVideoDataOutputSampleBufferDelegate, AVCapturePhotoCaptureDelegate {
     private var permissionGranted = false // Flag for permission
@@ -133,46 +94,41 @@ class ViewController: UIViewController,ObservableObject, AVCaptureVideoDataOutpu
     func takePic() {
         DispatchQueue.global(qos: .background).async {
             self.cameraOutput.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
-            self.captureSession.stopRunning()
-            
             DispatchQueue.main.async {
                 withAnimation{self.isTaken.toggle()
                 }
                 self.loading.toggle()
             }
-            
         }
-        
     }
     
     func reTake() {
-        
         DispatchQueue.global(qos: .background).async {
             self.captureSession.startRunning()
-            
             DispatchQueue.main.async {
                 withAnimation{self.isTaken.toggle()}
             }
+            
         }
-        
     }
     
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if error != nil {
             return
         }
+        self.captureSession.stopRunning()
         
         print("pic taken")
         
         guard let imageData = photo.fileDataRepresentation() else{return}
-        
         self.picData = imageData
        
         self.classification = self.classify() // TODO: add method to classify
-        
-        DispatchQueue.main.async {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             self.loading.toggle()
         }
+        
+        
         
     }
 

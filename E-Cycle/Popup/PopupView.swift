@@ -27,15 +27,6 @@ struct PopupView: View {
             close
         }
         .transition(.move(edge: .bottom))
-        
-//        List(items) { item in
-//            HStack {
-//                Image(uiImage: UIImage(named: item.imgLink) ?? UIImage())
-//                    .resizable()
-//                    .frame(width: 50, height: 50)
-//                Text(item.name)
-//            }
-//        }
     }
 }
 

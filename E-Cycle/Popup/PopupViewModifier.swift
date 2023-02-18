@@ -10,6 +10,7 @@ import SwiftUI
 
 struct PopupViewModifier: ViewModifier {
     @ObservedObject var sheetManager: SheetManager
+    @StateObject var camera: ViewController
     
     func body(content: Content) -> some View {
         content
@@ -18,6 +19,7 @@ struct PopupViewModifier: ViewModifier {
                     PopupView(config: config) {
                         withAnimation(.spring()) {
                             sheetManager.dismiss()
+                            camera.reTake()
                         }
                     }
                 }
@@ -28,7 +30,7 @@ struct PopupViewModifier: ViewModifier {
 }
 
 extension View {
-    func popup(with sheetManager: SheetManager) -> some View {
-        self.modifier(PopupViewModifier(sheetManager: sheetManager))
+    func popup(with sheetManager: SheetManager, camera: ViewController) -> some View {
+        self.modifier(PopupViewModifier(sheetManager: sheetManager, camera: camera))
     }
 }
