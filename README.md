@@ -15,3 +15,9 @@ The program will run and spit out what it thinks the item is. It may also provid
 <img src="https://user-images.githubusercontent.com/90977640/217628468-6a1a9960-91d5-4004-939e-d581d7892129.PNG" width=30% height=25%>
 
 More updates to come soon...
+
+# Video of App In Action
+
+
+https://user-images.githubusercontent.com/90977640/219970932-577ba5af-3441-41c1-b7d9-0681fca01554.mp4
+
