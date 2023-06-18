@@ -19,7 +19,8 @@ struct PopupViewModifier: ViewModifier {
                     PopupView(config: config) {
                         withAnimation(.spring()) {
                             sheetManager.dismiss()
-                            camera.reTake()
+                            camera.startFeed()
+                            camera.display.toggle()
                         }
                     }
                 }

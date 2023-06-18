@@ -1,6 +1,7 @@
 import Vision
 import AVFoundation
 import UIKit
+import SwiftUI
 
 extension ViewController {
     
@@ -60,8 +61,8 @@ extension ViewController {
         }
         
         let boxLayer = self.drawBoundingBox(self.lastBounds.insetBy(dx: -12, dy: -12))
-        print(boxLayer)
-        print(self.lastBounds.width * self.lastBounds.height)
+//        print(boxLayer)
+//        print(self.lastBounds.width * self.lastBounds.height)
         detectionLayer.addSublayer(boxLayer)
     }
     
@@ -80,6 +81,7 @@ extension ViewController {
         boxLayer.frame = bounds
         boxLayer.borderWidth = 6.0
         boxLayer.borderColor = CGColor.init(red: 0.0, green: 1.0, blue: 1.0, alpha: 1.0)
+//        boxLayer.borderColor = CGColor.init(red: 0.62, green: 0.91, blue: 0.54, alpha: 1.0)
         boxLayer.cornerRadius = 15
         return boxLayer
     }

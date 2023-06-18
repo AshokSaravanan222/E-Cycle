@@ -7,12 +7,19 @@
 
 import SwiftUI
 
+
 struct PopupView: View {
+    
+    @Environment(\.colorScheme) var colorScheme
+    
+    var palette: ColorPalette {
+        return colorScheme == .dark ? .dark : .light
+      }
     
     let config: SheetManager.Config
     let didClose : () -> Void
     var body: some View {
-        VStack(spacing: .zero) {
+        VStack(spacing: 10) {
             message
             title
             image
@@ -32,7 +39,7 @@ struct PopupView: View {
 
 struct PopupView_Previews: PreviewProvider {
     static var previews: some View {
-        PopupView(config: .init(item: items[6])){}
+        PopupView(config: .init(item: items[27])){}
             .padding()
             .background(.blue)
             .previewLayout(.sizeThatFits)
@@ -41,7 +48,7 @@ struct PopupView_Previews: PreviewProvider {
 
 private extension PopupView {
     var background : some View {
-        RoundedCorners(color:.white,
+        RoundedCorners(color:palette.backgroundColor,
                        tl: 10,
                        tr: 10,
                        bl: 0,
@@ -71,33 +78,14 @@ private extension PopupView {
     }
     
     var message: some View {
-        HStack {
+        ZStack {
             if (config.item.isRecyclable) {
-                    Image(systemName: "checkmark.square")
-                        .symbolVariant(.fill)
-                        .font(
-                            .system(size: 50,
-                                    weight: .bold,
-                                    design: .rounded)
-                        )
-                        .foregroundStyle(.green)
-                    Text("Recyclable")
-                
+                MessageCapsule(SFSymbolname: "leaf", text: "Recyclable", color: .green, palette: palette)
             } else {
-                Image(systemName: "x.square")
-                    .symbolVariant(.fill)
-                    .font(
-                        .system(size: 50,
-                                weight: .bold,
-                                design: .rounded)
-                    )
-                    .foregroundStyle(.red)
-                Text("Not Recyclable")
+                MessageCapsule(SFSymbolname: "trash", text: "Not Recyclable", color: .red, palette: palette)
             }
         }
-        
-        
-        
+
     }
     
     var title: some View {
@@ -110,21 +98,24 @@ private extension PopupView {
     }
     
     var image: some View {
-        config.item.image
+        Image(config.item.name.lowercased())
             .resizable()
             .frame(width: 300, height: 300)
+            .cornerRadius(10)
     }
     
     var content: some View {
-        Text(config.item.description)
-            .font(.callout)
-            .foregroundColor(.black.opacity(0.8))
+            Text(config.item.description)
+                .font(.callout)
+                .foregroundColor(palette.foregroundColor.opacity(0.8))
+                .transparentBox()
     }
 }
 
 // MARK: https://stackoverflow.com/questions/56760335/round-specific-corners-swiftui
 
 struct RoundedCorners: View {
+    
     var color: Color = .blue
     var tl: CGFloat = 0.0
     var tr: CGFloat = 0.0
@@ -159,3 +150,5 @@ struct RoundedCorners: View {
         }
     }
 }
+
+

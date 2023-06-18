@@ -21,10 +21,20 @@ class ViewController: UIViewController,ObservableObject, AVCaptureVideoDataOutpu
     var cameraOutput = AVCapturePhotoOutput()
     var picData = Data(count: 0)
     
-    //Observable Object Properties
-    @Published var isTaken = false
+    //Classifier
+    @Published var stringClassification = ""
+    @Published var lastPrediction : String? = nil
+    @Published var predictionLabel = UILabel()
+    @State var predictionComplete = false
+    let imagePredictor = ImagePredictor()
+    
+    //Camera View
+    @Published var display = true
     @Published var loading = false
     @Published var classification = 0
+    @Published var needsTip = false
+    @Published var displayImage = UIImage()
+    
     
 
 
@@ -93,25 +103,15 @@ class ViewController: UIViewController,ObservableObject, AVCaptureVideoDataOutpu
         }
     }
 
-    func takePic() {
+    func stopFeed() {
         sessionQueue.async {
             self.cameraOutput.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
-            DispatchQueue.main.async {
-                withAnimation{
-                    self.isTaken.toggle()
-                }
-                self.loading.toggle()
-            }
         }
     }
     
-    func reTake() {
+    func startFeed() {
         sessionQueue.async {
             self.captureSession.startRunning()
-            DispatchQueue.main.async {
-                withAnimation{self.isTaken.toggle()}
-            }
-            
         }
     }
     
@@ -119,24 +119,27 @@ class ViewController: UIViewController,ObservableObject, AVCaptureVideoDataOutpu
         if error != nil {
             return
         }
-        
+
         sessionQueue.async {
             self.captureSession.stopRunning()
         }
         
+        if loading {
+            processPhoto(photo: photo)
+        }
+        
+    }
+    
+    func processPhoto(photo: AVCapturePhoto) {
         print("pic taken")
-        guard let imageData = photo.fileDataRepresentation() else{return}
+        guard let imageData = photo.fileDataRepresentation() else {return}
         self.picData = imageData
        
-        //TODO: check the detection box contianer and if it exists( use optional object) crop it on image. pass this image to classify method
         
         self.classification = self.classify() // TODO: add method to classify
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             self.loading.toggle()
         }
-        
-        
-        
     }
 
 

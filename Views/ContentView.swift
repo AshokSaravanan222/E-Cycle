@@ -8,7 +8,7 @@ struct ContentView: View {
         ZStack {
             HostedViewController(view: camera)
                 .ignoresSafeArea()
-            CameraView(camera: camera)
+            AppView(camera: camera)
                 .environmentObject(SheetManager())
         }
         
@@ -18,5 +18,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .background(.green)
     }
 }

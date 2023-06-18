@@ -3,196 +3,224 @@
    "id": 0,
    "name": "Cardboard",
    "isRecyclable": true,
-   "description": "Corrugated and non-corrugated cardboard can be recycled together. They can be broken down and made into new boxes and packaging materials.",
-   "imageName": "cardboard"
+   "description": "Corrugated cardboard is made up of three layers of paper, which gives it strength and durability. Recycling one ton of cardboard can save 46 gallons of oil and 17 trees.",
+   "imageName": "cardboard",
+   "category": "Paper and Cardboard"
  },
  {
    "id": 1,
    "name": "Paper",
    "isRecyclable": true,
-   "description": "Includes office paper, printer paper, and copy paper. It can be recycled into new paper products.",
-   "imageName": "paper"
+   "description": "Includes office paper, printer paper, and copy paper. It can be recycled into new paper products. Recycling paper uses 60% less energy than making paper from scratch. It's estimated that if every American recycled just one-tenth of their newspapers, we could save 25 million trees each year.",
+   "imageName": "paper",
+   "category": "Paper and Cardboard"
  },
  {
    "id": 2,
    "name": "Envelopes",
    "isRecyclable": true,
-   "description": "They can be recycled with paper, as long as they do not have any plastic windows.",
-   "imageName": "envelopes"
+   "description": "Most envelopes are made of paper, which makes them recyclable. However, envelopes with plastic windows cannot be recycled and should be thrown in the trash.",
+   "imageName": "envelopes",
+   "category": "Paper and Cardboard"
  },
  {
    "id": 3,
    "name": "Colored Paper",
    "isRecyclable": true,
-   "description": "Can be recycled with other paper, but the color may not be retained in the recycling process.",
-   "imageName": "colored paper"
+   "description": "While color paper can be recycled, the color may not be retained in the recycling process. However, recycled paper can be used to make various new products, including tissue paper, paper towels, and even toilet paper.",
+   "imageName": "colored paper",
+   "category": "Paper and Cardboard"
  },
  {
    "id": 4,
    "name": "Magazine",
    "isRecyclable": true,
-   "description": "Can be recycled with paper, but glossy pages may need to be separated.",
-   "imageName": "magazine"
+   "description": "Can be recycled with paper, but glossy pages may need to be separated. Glossy pages of magazines are typically coated with a thin layer of plastic, which can make them difficult to recycle. However, many recycling programs now accept magazines and other glossy papers.",
+   "imageName": "magazine",
+   "category": "Paper and Cardboard"
  },
  {
    "id": 5,
    "name": "Newspaper",
    "isRecyclable": true,
-   "description": "Can be recycled with other paper.",
-   "imageName": "newspaper"
+   "description": "Can be recycled with other paper. Recycling one ton of newspaper can save 17 trees, 7,000 gallons of water, and 463 gallons of oil.",
+   "imageName": "newspaper",
+   "category": "Paper and Cardboard"
  },
  {
    "id": 6,
    "name": "Paper Bag",
    "isRecyclable": true,
-   "description": "Can be recycled with other paper, but handle may need to be removed.",
-   "imageName": "paper bag"
+   "description": "Can be recycled with other paper, but handle may need to be removed. Paper bags are biodegradable and can be recycled with other paper products. However, they can only be recycled a few times before the fibers break down.",
+   "imageName": "paper bag",
+   "category": "Paper and Cardboard"
  },
  {
    "id": 7,
    "name": "Paper Cup",
    "isRecyclable": true,
-   "description": "Some paper cups are lined with plastic, which means they can't be recycled. Check with your local recycling program to see if they accept them.",
-   "imageName": "paper cup"
+   "description": "While paper cups are made of paper, many of them are coated with a thin layer of plastic to make them waterproof. This can make them difficult to recycle, and they often end up in landfills.",
+   "imageName": "paper cup",
+   "category": "Paper and Cardboard"
  },
  {
    "id": 8,
    "name": "Book",
    "isRecyclable": true,
-   "description": "Books can be recycled, but they can also be donated to libraries or schools.",
-   "imageName": "book"
+   "description": "Donating books to libraries and schools is a great way to keep them out of landfills. However, if books cannot be donated, they can be recycled.",
+   "imageName": "book",
+   "category": "Paper and Cardboard"
  },
  {
    "id": 9,
    "name": "Shredded Paper",
    "isRecyclable": true,
-   "description": "Can be recycled with other paper, but it should be placed in a clear plastic bag before being placed in the recycling bin.",
-   "imageName": "shredded paper"
+   "description": "When recycling shredded paper, it should be placed in a clear plastic bag before being placed in the recycling bin. This helps to keep the paper fibers contained and prevents them from contaminating other materials.",
+   "imageName": "shredded paper",
+   "category": "Paper and Cardboard"
  },
  {
    "id": 10,
    "name": "Wrapping Paper",
    "isRecyclable": true,
-   "description": "Wrapping paper can be recycled, but it should be free of any foil, glitter or plastic additions.",
-   "imageName": "wrapping paper"
+   "description": "Wrapping paper is often used during the holiday season and special occasions. However, most wrapping paper is not recyclable due to the additives such as glitter or metallic inks.",
+   "imageName": "wrapping paper",
+   "category": "Other Plastics"
  },
  {
    "id": 11,
    "name": "Paper Carton",
    "isRecyclable": true,
-   "description": "Cartons that have held items such as juice, broth or soy milk can be recycled.",
-   "imageName": "paper carton"
+   "description": "Paper cartons are used for many food and beverage products such as milk, juice, and soup. These cartons are made from a combination of paper, plastic, and aluminum.",
+   "imageName": "paper carton",
+   "category": "Carton"
  },
  {
    "id": 12,
    "name": "Juice Box",
    "isRecyclable": true,
-   "description": "Juice boxes can be recycled, but it should be rinsed clean, and the straw removed.",
-   "imageName": "juice box"
+   "description": "Juice boxes are similar to paper cartons and are made from a combination of paper, plastic, and aluminum.",
+   "imageName": "juice box",
+   "category": "Carton"
  },
  {
    "id": 13,
    "name": "Aseptic Paper",
    "isRecyclable": true,
-   "description": "Aseptic containers, such as milk or juice cartons can be recycled.",
-   "imageName": "aseptic paper"
+   "description": "Aseptic paper is used for long-life products such as milk, juice, and soup. This paper is made from a combination of paper, plastic, and aluminum.",
+   "imageName": "aseptic paper",
+   "category": "Aluminium"
  },
  {
    "id": 14,
    "name": "Bottle",
    "isRecyclable": true,
-   "description": "Made of plastic or glass, bottles can be recycled.",
-   "imageName": "bottle"
+   "description": "Bottles are made from various materials such as glass or plastic and are used for many beverages and household products.",
+   "imageName": "bottle",
+   "category": "Other Plastics"
  },
  {
    "id": 15,
    "name": "Takeout Container",
    "isRecyclable": true,
-   "description": "Some takeout containers can be recycled, but it depends on the material. Check with your local recycling program to see if they accept them.",
-   "imageName": "takeout container"
+   "description": "Some takeout containers can be recycled, but it depends on the material. Check with your local recycling program to see if they accept them. Takeout containers are often made from plastic or paper and are used for food delivery and takeout.",
+   "imageName": "takeout container",
+   "category": "Other Plastics"
  },
  {
    "id": 16,
    "name": "Milk Jug",
    "isRecyclable": true,
-   "description": "Can be recycled, but should be rinsed clean.",
-   "imageName": "milk jug"
+   "description": "Milk jugs are often made from plastic and can be recycled into various new products such as lawn furniture, recycling bins, and trash cans.",
+   "imageName": "milk jug",
+   "category": "Carton"
  },
  {
    "id": 17,
    "name": "Plastic Cup",
    "isRecyclable": true,
-   "description": "Some plastic cups can be recycled, but it depends on the material. Check with your local recycling program to see if they accept them.",
-   "imageName": "plastic cup"
+   "description": "Some plastic cups can be recycled, but it depends on the material. Check with your local recycling program to see if they accept them. Plastic cups are used for many beverages and are often made from PET plastic.",
+   "imageName": "plastic cup",
+   "category": "Plastic"
  },
  {
    "id": 18,
    "name": "Plastic Bucket",
    "isRecyclable": true,
-   "description": "Can be recycled, but should be clean and free of any food residue.",
-   "imageName": "plastic bucket"
+   "description": "Can be recycled, but should be clean and free of any food residue. Plastic buckets are often used for household storage and are made from various types of plastic.",
+   "imageName": "plastic bucket",
+   "category": "Plastic"
  },
  {
    "id": 19,
    "name": "Plastic Furniture",
    "isRecyclable": true,
-   "description": "Can be recycled, but it depends on the type and location. Check with your local recycling program to see if they accept them.",
-   "imageName": "plastic furniture"
+   "description": "Can be recycled, but it depends on the type and location. Plastic furniture can be made from various types of plastic such as polypropylene, which is commonly used for chairs and tables. Fun fact: Plastic furniture can take up to 1,000 years to decompose in a landfill.",
+   "imageName": "plastic furniture",
+   "category": "Plastic"
  },
  {
    "id": 20,
    "name": "Laundry Basket",
    "isRecyclable": true,
-   "description": "Can be recycled, but it depends on the type and location. Check with your local recycling program to see if they accept them.",
-   "imageName": "laundry basket"
+   "description": "Laundry baskets are often made from plastic and can be recycled into various new products. Fun fact: The first laundry basket was patented in the US in 1884 by a woman named Elizabeth Wheeler.",
+   "imageName": "laundry basket",
+   "category": "Other Plastics"
  },
  {
    "id": 21,
    "name": "Aluminum Can",
    "isRecyclable": true,
-   "description": "Can be recycled and made into new products.",
-   "imageName": "aluminum can"
+   "description": "Aluminum cans are used for many beverages and can be recycled infinitely without losing quality. Fun fact: Recycling one aluminum can saves enough energy to power a TV for three hours.",
+   "imageName": "aluminum can",
+   "category": "Aluminium"
  },
  {
    "id": 22,
    "name": "Aluminum Foil",
    "isRecyclable": true,
-   "description": "Can be recycled, but should be clean and free of any food residue.",
-   "imageName": "aluminum foil"
+   "description": "Aluminum foil is often used for cooking and can be recycled into various new products. Fun fact: Aluminum foil was first produced in Switzerland in 1910.",
+   "imageName": "aluminum foil",
+   "category": "Aluminium"
  },
  {
    "id": 23,
    "name": "Tin Can",
    "isRecyclable": true,
-   "description": "Can be recycled and made into new products.",
-   "imageName": "tin can"
+   "description": "Tin cans are used for many food products and can be recycled into various new products. Fun fact: The first tin can was patented in 1810 by a man named Peter Durand",
+   "imageName": "tin can",
+   "category": "Aluminium"
  },
  {
    "id": 24,
    "name": "Scrap Metal",
    "isRecyclable": true,
-   "description": "Can be recycled and made into new products.",
-   "imageName": "scrap metal"
+   "description": "Scrap metal can be found in various household items such as appliances, tools, and furniture. Fun fact: The steel in the Eiffel Tower weighs about 10,000 tons, all of which is recyclable.",
+   "imageName": "scrap metal",
+   "category": "Other Plastics"
  },
  {
    "id": 25,
    "name": "Glass Bottle",
    "isRecyclable": true,
-   "description": "Can be recycled and made into new products.",
-   "imageName": "glass bottle"
+   "description": "Glass bottles are used for many beverages and can be recycled into new bottles or various new products. Fun fact: Glass can be recycled infinitely without losing quality.",
+   "imageName": "glass bottle",
+   "category": "Glass"
  },
  {
    "id": 26,
    "name": "Glass Jars",
    "isRecyclable": true,
-   "description": "Can be recycled and made into new products.",
-   "imageName": "glass jars"
+   "description": "Glass jars are often used for food products and can be recycled into new jars or various new products. Fun fact: The oldest glass artifact discovered is a glass bead dating back to 3,500 BC.",
+   "imageName": "glass jars",
+   "category": "Glass"
  },
  {
    "id": 27,
    "name": "Trash",
    "isRecyclable": false,
-   "description": "Cannot be recycled",
-   "imageName": "trash"
+   "description": "Trash is any waste material that cannot be reused, recycled, or composted. Fun fact: According to the Environmental Protection Agency, Americans generate an average of 4.4 pounds of trash per day.",
+   "imageName": "trash",
+   "category": "Textiles, Wood, Organic Waste"
  }
 ]
