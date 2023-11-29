@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocationUI
 
 struct MenuView: View {
     
@@ -16,13 +17,14 @@ struct MenuView: View {
     @ObservedObject var camera : ViewController
     
     var body: some View {
-        TextField("Enter your ZIP code", text: $zipCode)
-        Picker("Enter your material: ", selection: $selection) {
-            
-        }
-        .pickerStyle(.inline)
         if #available(iOS 16.0, *) {
             NavigationStack {
+                LocationButton(.currentLocation) {
+                  // Fetch location with Core Location.
+                }
+                .symbolVariant(.fill)
+                .labelStyle(.titleAndIcon)
+                
                 List {
                 }
                 .navigationTitle("Recyling Centers")
@@ -34,9 +36,11 @@ struct MenuView: View {
                         }
                     }
                 }
+                .navigationBarTitleDisplayMode(.automatic)
             }
         } else {
             // Fallback on earlier versions
         }
+
     }
 }
